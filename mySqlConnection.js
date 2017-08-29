@@ -9,9 +9,9 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 var con = mysql.createConnection({
   host: "localhost",
-  user: "sameer",
-  password: "root123",
-  database: "mysqlNodeDb"
+  user: "your@localhostname",
+  password: "your mysql db password",
+  database: "mysqlNodeDb" // This is my database used for this application
 });
 
 
@@ -80,7 +80,7 @@ app.put('/customers', function (req, res) {
  });
 });
 
-
+// Below is sample code for into same data used by me into database
 
 // con.connect(function(err) {
 //   if (err) throw err;
